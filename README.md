@@ -37,7 +37,7 @@ Data Source: [Mars Weather twitter account](https://twitter.com/marswxreport?lan
 
 # Expected Result:
 1. Output as csv file: weather data with 4 cols(Date, Temperature High, Temperature Low, pressure) 
-2. Scatter Plot for Temperature High and Pressure
+2. Scatter Plot as a PNG format for Temperature High and Pressure
 
 Sample Result:
 
