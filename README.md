@@ -26,7 +26,7 @@ Data Source: [Mars Weather twitter account](https://twitter.com/marswxreport?lan
 
 # Requirements:
 
-+ Develop a web scraper
++ Develop a web scraper (cannot use APIs)
 + Develop a ETL process 
 + Visualize the weather data with scatter plot
 + Publish your code along with any data sets used on your GitHub page
