@@ -29,7 +29,7 @@ Your code interview will be evaluated based on your repo, so make sure all files
 At Rodo, we have close relations with major car dealers across the country and we maintain a database of car inventories for online listings. For 4 times a day we receive **dealer feeds** from feed providers that contains detailed information about car availabilities at each dealership (you can find them under the `feeds` folder). Each feed provider has consistent data schema for each associated dealerships.
 > Example: in the `feeds` folder, you can find two feed providers (**bram** and **silverstar**). Under the `feeds/bram@honcker.com` you can find two feed files for dealership **jenkinskiaocala** and **waynemazda**. The sample feed files you see have maximum 50 records each, in reality, we have way more records available.
 
-## Task 1
+## Task 1: Data ETL
 
 Your task will be to build a feed ingestion framework that standardizes raw feed files and load them into a database. While developing, please keep in mind that we have around 50 different feed providers and more than 1000 dealerships, so designing something reusable, extendable and generalizable is important.
 
@@ -145,7 +145,7 @@ dealer_drive_type | Drivetrain |  
 dealer_images | ImageList | "," delimited
 dealer_certified | Certified | "Yes" = True
 
-#### Notes
+#### Note
 
 1. the `hash` field is use to detect if a car has any information change in the feed files. so please implement it in a way that would serve this purpose.
 
@@ -155,7 +155,7 @@ dealer_certified | Certified | "Yes" = True
 
 4. It's your call to use or not use a ORM, either way please document your thoughts and reasonings.
 
-## Task 2
+## Task 2: Analysis and Visualization
 
 Plot a line plot to show number of cars at each dealership through out time. the X axis will be year-month and the Y axis will be the number of cars at each dealership given year and month.
 
@@ -165,7 +165,7 @@ Plot a line plot to show number of cars at each dealership through out time. the
 
 a `.png` file of the plot in the `output` folder. Please have clear title/legend/axis descriptions.
 
-## Task 3 (Bonus)
+## Task 3 (Bonus): Image Downloader
 
 Write a image downloader that would take a dealer image url and download to a local path (`images`). If you are able to acomplish this task, make sure in the `dealer_images` field, it's reflecting an array of local image file paths instead of urls.
 
