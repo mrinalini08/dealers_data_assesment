@@ -25,7 +25,7 @@ Your code interview will be evaluated based on your repo, so make sure all files
 ## Introduction
 
 At Rodo, we have close relations with major car dealers across the country and we maintain a database of car inventories for online listings. For 4 times a day we receive **dealer feeds** from feed providers that contains detailed information about car availabilities at each dealership (you can find them under the `feeds` folder). Each feed provider has consistent data schema for each associated dealerships.
-> Example: in the `feeds` folder, you can find two feed providers (**bram** and **silverstar**). Under the `feeds/bram` you can find two feed files for dealership **jenkinskiaocala** and **waynemazda**. The sample feed files you see have maximum 50 records each, in reality, we have way more records available.
+> Example: in the `feeds` folder, you can find two feed providers (**provider1** and **provider2**). Under the `feeds/provider1` you can find feed files for dealership **dealership1**. The sample feed files you see have maximum 50 records each, in reality, we have way more records available.
 
 ## Task 1: Data ETL
 
@@ -76,7 +76,7 @@ CREATE TABLE dealer_data (
 
 ### Schema Mapping
 
-#### `silverstar` Files
+#### `provider2` Files
 
 Target | Source | Info
 -- | -- | --
@@ -108,7 +108,7 @@ dealer_drive_type | N/A | leave as NULL
 dealer_images | Photos | "\|" delimited
 dealer_certified | Certified | "Yes" = True
 
-#### `bram` Files
+#### `provider1` Files
 
 Target | Source | Info
 -- | -- | --
