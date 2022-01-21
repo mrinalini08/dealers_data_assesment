@@ -18,6 +18,7 @@ Your code interview will be evaluated based on your repo, so make sure all files
 - **Code**:
   - Clean, formated and readable
   - DRY (Don't Repeat Yourself)
+  - Tests are appreciated!
 
 - **Documentation**:
   - A comprehensive `README.md` on anything that we should know about this repo.
