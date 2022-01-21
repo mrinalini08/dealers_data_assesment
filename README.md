@@ -4,20 +4,20 @@
 
 Welcome to the Data Engineering code interview! This small data challenge is designed to test out your skills in python, sql, git and basical data visualization.
 
-## What we are looking for
+## Test Scoring - Minimum to consider for interview (75%)
 
 Your code interview will be evaluated based on your repo, so make sure all files you have are stored in your repo. Specifically we are looking at:
 
-- **Project scafolding**: How you name, manage, and organize your files.
-- **Reproducibility**:
+- **Project scafolding (10%)**: How you name, manage, and organize your files.
+- **Reproducibility (30%)**:
   - Ideally if it runs on your machine, it would also run on mine.
   - Make sure you document any software dependency, and installation process.
   - Clear and informative commit messages
-- **Code**:
+- **Code  (30%)**:
   - Clean, formated and readable
   - DRY (Don't Repeat Yourself)
   - Tests are appreciated!
-- **Documentation**:
+- **Documentation (20%)**:
   - A comprehensive `README.md` on anything that we should know about this repo.
   - Clear instructions on commands to run code and what to expect (we love clis).
   - Clear documentation for functions/processes in code.
@@ -25,7 +25,7 @@ Your code interview will be evaluated based on your repo, so make sure all files
 ## Introduction
 
 At Rodo, we have close relations with major car dealers across the country and we maintain a database of car inventories for online listings. For 4 times a day we receive **dealer feeds** from feed providers that contains detailed information about car availabilities at each dealership (you can find them under the `feeds` folder). Each feed provider has consistent data schema for each associated dealerships.
-> Example: in the `feeds` folder, you can find two feed providers (**bram** and **silverstar**). Under the `feeds/bram@honcker.com` you can find two feed files for dealership **jenkinskiaocala** and **waynemazda**. The sample feed files you see have maximum 50 records each, in reality, we have way more records available.
+> Example: in the `feeds` folder, you can find two feed providers (**bram** and **silverstar**). Under the `feeds/bram` you can find two feed files for dealership **jenkinskiaocala** and **waynemazda**. The sample feed files you see have maximum 50 records each, in reality, we have way more records available.
 
 ## Task 1: Data ETL
 
@@ -76,7 +76,7 @@ CREATE TABLE dealer_data (
 
 ### Schema Mapping
 
-#### `silverstar@honcker.com` Files
+#### `silverstar` Files
 
 <google-sheets-html-origin><style type="text/css"><!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}--></style>
 Target | Source | Info
@@ -109,7 +109,7 @@ dealer_drive_type | N/A | leave as NULL
 dealer_images | Photos | "\|" delimited
 dealer_certified | Certified | "Yes" = True
 
-#### `bram@honcker.com` Files
+#### `bram` Files
 
 <google-sheets-html-origin><style type="text/css"><!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}--></style>
 
@@ -153,7 +153,7 @@ dealer_certified | Certified | "Yes" = True
 
 4. It's your call to use or not use a ORM, either way please document your thoughts and reasonings.
 
-## Task 2: Analysis and Visualization
+## Task 2: Analysis and Visualization (Bonus)
 
 Plot a line plot to show number of cars at each dealership through out time. the X axis will be year-month and the Y axis will be the number of cars at each dealership given year and month.
 
@@ -163,10 +163,9 @@ Plot a line plot to show number of cars at each dealership through out time. the
 
 a `.png` file of the plot in the `output` folder. Please have clear title/legend/axis descriptions.
 
-## Task 3 (Bonus): Image Downloader
+## Post Test Interview process
 
-Write a image downloader that would take a dealer image url and download to a local path (`images`). If you are able to acomplish this task, make sure in the `dealer_images` field, it's reflecting an array of local image file paths instead of urls.
+There will be 2 interviews after the test has been successfully submitted
 
-### Expected output
-
-You don't have to commit the images to your repo. Just the code is enough.
+- 1 Interview will be focused on submitted exercise, code review, and requirements validation
+- 1 Interview will be focused on your experience working in —> agile environments, interactions with QA Automation teams, technical collaboration style, and ability to receive and provide honest feedback to team
