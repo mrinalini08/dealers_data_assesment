@@ -78,7 +78,6 @@ CREATE TABLE dealer_data (
 
 #### `silverstar` Files
 
-<google-sheets-html-origin><style type="text/css"><!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}--></style>
 Target | Source | Info
 -- | -- | --
 dealership_id | DealerId |  
@@ -110,8 +109,6 @@ dealer_images | Photos | "\|" delimited
 dealer_certified | Certified | "Yes" = True
 
 #### `bram` Files
-
-<google-sheets-html-origin><style type="text/css"><!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}--></style>
 
 Target | Source | Info
 -- | -- | --
