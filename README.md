@@ -159,6 +159,8 @@ dealer_certified | Certified | "Yes" = True
 
 Plot a line plot to show number of cars at each dealership through out time. the X axis will be year-month and the Y axis will be the number of cars at each dealership given year and month.
 
+> We would prefer if you do the data aggregation in SQL
+
 ### Expected output
 
 a `.png` file of the plot in the `output` folder. Please have clear title/legend/axis descriptions.
