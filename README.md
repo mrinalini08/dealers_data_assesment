@@ -9,17 +9,14 @@ Welcome to the Data Engineering code interview! This small data challenge is des
 Your code interview will be evaluated based on your repo, so make sure all files you have are stored in your repo. Specifically we are looking at:
 
 - **Project scafolding**: How you name, manage, and organize your files.
-
 - **Reproducibility**:
   - Ideally if it runs on your machine, it would also run on mine.
   - Make sure you document any software dependency, and installation process.
   - Clear and informative commit messages
-
 - **Code**:
   - Clean, formated and readable
   - DRY (Don't Repeat Yourself)
   - Tests are appreciated!
-
 - **Documentation**:
   - A comprehensive `README.md` on anything that we should know about this repo.
   - Clear instructions on commands to run code and what to expect (we love clis).
