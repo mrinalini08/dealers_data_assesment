@@ -1,0 +1,11 @@
+Columns in csv files are much larger in number, for this, mapping is created, extra columns are dropped and reordered in desired sequence.
+dealer_transmission_type is not present in table, however present in the mapping
+Renamed columns as per the mapping specified,
+Removed extra columns
+Created primary key hash column(which is sequential index), which is set as index
+dealer_certified is also a column not present in csv file for provider2 file
+Line plot is made on created pivot table based on the total number of vehicles and ploted accross the years 
+The matplotlib is used for creating line graph
+The output picture and db file is uploaded in output folder
+Right now, you will have access to view the repository, when you are done checking, I will convert access tp private.
+Thank you for the opportunity
